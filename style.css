@@ -202,7 +202,38 @@ html{
   .miFrase {
     margin: 0;
     cursor: default;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 35ch;
+
+    animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    color: white;
   }
+
+  .dev {
+    margin: 0;
+    cursor: default;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 23ch;
+
+    animation: typing 2s steps(21), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    color: white;
+  }
+
+  @keyframes typing {
+    from { width: 0;}
+}
+
+@keyframes blink {
+    50% { border-color: transparent;}
+}
   
   .nav-links {
     display: flex;
